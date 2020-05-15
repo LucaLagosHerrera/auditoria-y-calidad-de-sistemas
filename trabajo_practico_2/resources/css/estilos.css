@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu';
+    background: url("../img/auditoria.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.formulario {
+    width: 98%;
+    max-width: 500px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(21, 21, 21, 0.8);
+    border-radius: 7px;
+}
+
+.formulario_dos {
+    width: 98%;
+    max-width: 750px;
+    top: 50px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(21, 21, 21, 0.8);
+    border-radius: 7px;
+}
+
+.form-titulo {
+    background: rgba(255, 136, 0, 0.973);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 6px solid rgb(158, 157, 157);
+}
+
+.contenedor {
+    padding: 4px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    color: white;
+    padding-bottom: 3px;
+}
+
+.conte {
+    width: 100%;
+    line-height: 25pt;
+}
+
+input{
+    font-family: 'Ubuntu';
+    margin-top: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-color: rgba(255, 136, 0, 0.973);
+    border-radius: 7px;
+    background:rgba(255, 255, 255, 0.8);
+    color: rgb(21, 21, 21);
+}
+
+.text-input {
+    font-family: 'Ubuntu';
+    margin-top: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-color: rgba(255, 136, 0, 0.973);
+    border-radius: 7px;
+    background:rgba(255, 255, 255, 0.8);
+    color: rgb(21, 21, 21);
+}
+
+.btn-submit {
+    background: rgba(255, 136, 0, 0.973);
+    color: rgb(21, 21, 21);
+    font-family: 'Ubuntu';
+    font-weight: 900;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.btn-submit:active {
+    transform: scale(1.05);
+}
+
+.btn-submit:hover {
+    background: rgb(21, 21, 21);
+    color: rgba(255, 136, 0, 0.973);
+}
+
+.date-input {
+    font-family: 'Ubuntu';
+    margin-top: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-color: rgba(255, 136, 0, 0.973);
+    border-radius: 7px;
+    background:rgba(255, 255, 255, 0.8);
+    color: rgb(21, 21, 21);
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+img {
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    margin-bottom: 40px;
+    display: block;
+}
+
+span {
+    margin-bottom: 10px;
+}
+
+.texto {
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.texto_dos {
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+
+

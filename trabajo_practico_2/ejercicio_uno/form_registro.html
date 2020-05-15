@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Ejercicio N°1 | Trabajo Practico N°2</title>
+</head>
+<link rel="stylesheet" href="../resources/css/estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+<body>
+    <form action="registro.php" name="myForm" method="post" class="formulario" onsubmit="return validar();">
+        <div>
+            <h1 class="form-titulo"><strong>1. Ingreso de Datos</strong></h1>
+        </div>
+        <div class="contenedor">
+            <div class="conte">
+                <label class="form-label"><strong>Código de Cliente: </strong></label>
+                <input type="text" id="cod_cliente" name="cod_cliente" placeholder="Escriba su Codigo de Cliente..." oninput="validarCodCliente();" autocomplete="off">
+                <span id="cc" class="texto"></span>
+            </div>
+            <div class="conte">
+                <label class="form-label"><strong>Razón Social: </strong></label>
+                <input type="text" id="razon_social" name="razon_social" placeholder="Escriba su Razon Social..." oninput="validarRazonSocial();" maxlength="30" autocomplete="off">
+                <span id="rs" class="texto"></span>
+            </div>
+
+            <div class="conte">
+                <label class="form-label"><strong>Número de CUIT: </strong></label>
+                <input type="text" id="cuit" name="cuit" placeholder="99-99999999-9" oninput="validarCuit();" autocomplete="off">
+                <span id="cu" class="texto"></span>
+            </div>
+
+            <div class="conte">
+                <label class="form-label"><strong>Fecha de Alta: </strong></label>
+                <input type="date" id="fecha_alta" name="fecha_alta" class="date-input" oninput="validarFechaAlta();" autocomplete="off">
+                <span id="fa" class="texto"></span>
+            </div>
+
+            <div class="conte">
+                <label class="form-label"><strong>Fecha de Último Pedido: </strong></label>
+                <input type="date" id="fecha_pedido" name="fecha_pedido" class="date-input" oninput="validarFechaPedido();" autocomplete="off">
+                <span id="fp" class="texto"></span>
+            </div>
+
+            <div class="conte">
+                <label class="form-label"><strong>Provincia: </strong></label>
+                <input type="text" id="provincia" name="provincia" placeholder="Escriba el nombre de su Provincia..." oninput="validarProvincia();" maxlength="15" autocomplete="off">
+                <span id="p" class="texto"></span>
+            </div>
+
+            <div class="conte">
+                <label class="form-label"><strong>Límite de Crédito: </strong></label>
+                <input type="text" class="decimal" id="credito" name="credito" placeholder="Escriba su cantidad limite de credito..." oninput="validarCredito();" autocomplete="off">
+                <span id="c" class="texto"></span>
+            </div>
+            <div class="conte">
+                <input type="submit" id="registro" class="btn-submit" value="Registrar">
+            </div>
+            <p></p>
+        </div>
+    </form>
+</body>
+<script src="validacion.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+<script type="text/javascript" src="patron.js"></script>
+
+</html>

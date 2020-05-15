@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Ejercicio N°3 | Trabajo Practico N°2</title>
+</head>
+<link rel="stylesheet" href="../resources/css/estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+<body>
+    <form action="#" name="myForm" class="formulario_dos">
+        <div>
+            <h1 class="form-titulo"><strong>3. Algoritmo de Luhn</strong></h1>
+        </div>
+        <div class="contenedor">
+            <div class="conte">
+                <label class="form-label"><strong>Por favor, ingrese su Tarjeta de Crédito: </strong></label>
+                <input type="text" id="tarjeta_credito" name="tarjeta_credito"
+                    data-inputmask="'mask': '9999 9999 9999 9999'" placeholder="Escriba su Tarjeta de Crédito..."
+                    oninput="validarTarjCredito(this.form);" autocomplete="off">
+                <span id="tc" class="texto_dos"></span>
+            </div>
+        </div>
+    </form>
+</body>
+<script src="validacion.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+<script src="patron.js"></script>
+
+</html>
